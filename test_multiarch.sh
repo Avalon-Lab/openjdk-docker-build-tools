@@ -17,7 +17,7 @@ set -o pipefail
 root_dir="$PWD"
 source_prefix="adoptopenjdk"
 source_repo="openjdk"
-version="9"
+version="14"
 tag_aliases=""
 arch_tags=""
 man_file=${root_dir}/manifest_commands.sh
