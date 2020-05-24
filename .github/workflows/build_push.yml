@@ -19,8 +19,8 @@ jobs:
       run: ./build_tools_all.sh
 
     - name: Commit Dockerfile
-            run: |
-              git config --global user.name 'Avalon Lab Bot'
-              git config --global user.email 'AvalonLabBot@users.noreply.github.com'
-              git commit -am "Update Dockerfile generated from Github Action"
-              git push
+      run: |
+        git config --global user.name 'Avalon Lab Bot'
+        git config --global user.email 'AvalonLabBot@users.noreply.github.com'
+        git commit -am "Update Dockerfile generated from Github Action"
+        git push
