@@ -3,8 +3,9 @@
 name: Build_Push_Docker_Hub
 
 on:
-  release:
-    types: [published]
+  push:
+    branches:
+      - master
 
 jobs:
   build:
