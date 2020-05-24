@@ -50,7 +50,7 @@ do
 	echo "                                                                               "
 	echo "==============================================================================="
 	cat push_commands.sh
-	# ./push_commands.sh
+	./push_commands.sh
 
 	# Now test the images from hub.docker.com
 	echo "==============================================================================="

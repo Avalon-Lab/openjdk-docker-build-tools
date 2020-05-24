@@ -1,26 +1,26 @@
-# This is a basic workflow to help you get started with Actions
+# Workflow to build & push to Docker hub
 
 name: Build_Push_Docker_Hub
 
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
 on:
   release:
     types: [published]
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    # Runs docker file
-    - name: Run a one-line script
+    - name: Docker hub login
+      run: echo ${{ secrets.DOCKER_HUB_PASSWORD  }} | docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} --password-stdin
+
+    - name: build and push
       run: ./build_tools_all.sh
 
+    - name: Commit Dockerfile
+            run: |
+              git config --global user.name 'Avalon Lab Bot'
+              git config --global user.email 'AvalonLabBot@users.noreply.github.com'
+              git commit -am "Update Dockerfile generated from Github Action"
+              git push

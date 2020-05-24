@@ -15,7 +15,7 @@
 set -o pipefail
 
 root_dir="$PWD"
-source_prefix="adoptopenjdk"
+source_prefix="avalonlab"
 source_repo="openjdk"
 version="14"
 tag_aliases=""
