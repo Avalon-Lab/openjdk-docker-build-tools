@@ -41,7 +41,7 @@ print_legal() {
 # Print the maintainer
 print_maint() {
 	cat >> $1 <<-EOI
-	MAINTAINER Dinakar Guniguntala <dinakar.g@in.ibm.com> (@dinogun)
+	MAINTAINER Avalon Lab <contact@avalon-lab.coom> (@avalon_lab)
 	EOI
 }
 

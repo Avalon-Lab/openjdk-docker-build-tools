@@ -16,7 +16,7 @@ set -o pipefail
 
 root_dir="$PWD"
 push_cmdfile=${root_dir}/push_commands.sh
-target_repo="adoptopenjdk"
+target_repo="avalonlab"
 version="14"
 
 source ./common_functions.sh

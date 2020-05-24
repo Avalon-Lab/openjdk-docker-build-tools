@@ -37,7 +37,7 @@ export supported_versions="14"
 export supported_builds="releases nightly"
 
 # Target repo on hub.docker.com
-target_repo="adoptopenjdk"
+target_repo="avalonlab"
 
 function check_version() {
 	version=$1

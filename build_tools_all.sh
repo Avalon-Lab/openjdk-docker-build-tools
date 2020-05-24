@@ -39,7 +39,7 @@ do
 		exit 1;
 	fi
 	echo
-	echo "WARNING: Pushing to AdoptOpenJDK repo on hub.docker.com"
+	echo "WARNING: Pushing to AvalonLab repo on hub.docker.com"
 	echo "WARNING: If you did not intend this, quit now. (Sleep 5)"
 	echo
 	sleep 5
@@ -50,7 +50,7 @@ do
 	echo "                                                                               "
 	echo "==============================================================================="
 	cat push_commands.sh
-	./push_commands.sh
+	# ./push_commands.sh
 
 	# Now test the images from hub.docker.com
 	echo "==============================================================================="
