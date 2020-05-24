@@ -1,0 +1,12 @@
+declare -A jdk_openj9_14_releases_sums=(
+	[version]="jdk-14.0.1+7_openj9-0.20.0"
+	[ppc64le]="6914fe4383dd20d2f72772b5a8957e9103f7b255df8babfb063c3c9c59683959"
+	[s390x]="261860d6f190719e4e355db85592536b2385781087a8c7727b7a5ac4cfd812ce"
+	[x86_64]="2350592f4b0db1439fdd48d4fa7e05b270f271dcc79b2c7f174489ee2f6b14c1"
+)
+declare -A jdk_openj9_14_nightly_sums=(
+	[version]="jdk14u-2020-05-24-06-29"
+	[ppc64le]="cadda90f89d6416e6b210fc61bf792a67eac059da0ae02a52ecb90659bb14015"
+	[s390x]="c4ca512ae2ccb1ccc305cd8bfb09280e30928c0ebec0d065bb78c3339bac51f5"
+	[x86_64]="53967c15df006fb7feea443e44c5c54a03a61cc2bb9c12a042a2456ac0a535b4"
+)
